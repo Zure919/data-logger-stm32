@@ -6,6 +6,9 @@ The sensors used to implement this project are:
 -OLED display (a small screen based on OLED technology, allows individual pixel selection and uses the I2C communication method)
 -HW-203 (SD card component to which an SD card can be attached, and performs recording every 5 seconds. There is also the possibility of constantly removing and inserting the card as needed for the data we want to record)
 -HW-478 (so-called '3 color RGB LED module' is a component that works with a PWM signal, and is used as a visual sensor depending on the temperature value. The limit set to see two modes is at 30.0°C)
+For this project I have used next libraries for setting up the clock and OLED display:
+[DS1302N] https://github.com/aaron-ev/driver-ds1302-stm32f4
+[OLED] https://github.com/taburyak/STM32_OLED_SSD1306_HAL_DMA/tree/master
 The board that was used for this project is NUCLEO-F446RE and it is written in C using the STM32CubeMX and STM32CubeIde programms.
 
 [Picture of the whole setup]
